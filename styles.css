@@ -1,0 +1,295 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to right, rgb(85, 1, 64),rgb(15, 1, 78));
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #dddddd;
+
+}
+p{
+    color: #dddddd;
+}
+header{
+    
+    
+    margin:auto;
+    padding-left: 25px;
+    background-image: url(pbg.gif);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+    
+}
+.rows{
+    display:flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+
+   
+    
+}
+.col img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin:25px ;
+    
+    
+}
+
+.btn{
+    display: inline-block;
+    background:transparent ;
+    color: #000000;
+    padding:8px 30px;
+    margin: 30px 0;
+    border-radius:30px;
+    border: 3px solid #000000;
+    transition: transform 0.5s;
+    
+}
+.btn:hover{
+    border: 3px solid #fff;
+    transform: scale(1.2);
+    color: #fff;
+
+}
+.rows{
+    display: flex;
+
+}
+.categories{
+    margin:70px 0;
+}
+.col3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 30px;
+    transition: transform 0.5s;
+}
+.col3 img{
+    width: 100%;
+}
+.cont1{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cont11{
+    max-width: 1440px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+
+
+.col4{
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col4 img{
+    width: 100%;
+    height:60%;
+}
+.title{
+    text-align: center;
+    line-height: 60px;
+    margin: 0 auto 80px;
+    position: relative;
+    color: #e4e4e4;
+}
+.rating .fa{
+    color:#000000
+}
+.col4:hover{
+    transform: scale(110%);
+ 
+}
+.col3:hover{
+    transform: scale(110%);
+ 
+}
+.offer{
+    
+    background:#0f0b35;
+    backdrop-filter: blur(20px);
+    margin-top:80px;
+    padding: 30px 0;
+    
+}
+.col .offer-img{
+   
+   padding-right:50px;
+   transition: transform 0.5s;
+}
+
+.col .offer-img:hover{
+    transform: scale(1.4);
+   
+   
+}
+
+
+/*footer*/
+
+.footer{
+    
+    color:#8a8a8a;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    padding: 60px 0 20px;
+    background: #000000
+  
+    
+
+    
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+.applogo{
+    margin-top:20px;
+
+}
+.applogo img{
+    width:140px;
+    
+}
+.menu-icon{
+    width: 28px;
+    margin-left:20px;
+    
+    display:none;
+}
+nav1{
+    flex: 1;
+    text-align: right;
+   
+    
+}
+nav1 ul{
+    display: inline-block;
+    list-style-type: none;
+  
+    
+}
+
+nav1 ul li{
+    display: inline-block;
+    margin-right: 20px;
+ 
+    
+}
+table, th, td {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
+  }
+th,td{
+    padding:20px
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.con h1{
+    text-align: center;
+    padding:20px 0 20px 0;
+    color: #dfa0f1;
+}
+table{
+    border-spacing: 15px;
+}
+
+.ab h1,p{
+    margin:20px 20px 20px 20px;
+}
+.offa{
+    border-top: 1px solid #000;
+    background:linear-gradient(to right, rgb(85, 1, 64),rgb(15, 1, 78));
+}
+.offa{
+    
+    background:linear-gradient(to right, rgb(85, 1, 64),rgb(15, 1, 78));
+
+    backdrop-filter: blur(20px);
+    margin-top:80px;
+    padding: 30px 0;
+    
+}
+.col .offa-img{
+   
+   padding-right:50px;
+   transition: transform 0.5s;
+}
+
+.col .offa-img:hover{
+    transform: scale(1.4);
+   
+   
+}
+.testimonial{
+    padding-top: 100px;
+
+}
+.testimonial img{
+    width: 70%;
+    border-radius: 50%;
+}
+.testimonial h1{
+    text-align: center;
+}

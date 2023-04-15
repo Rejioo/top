@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    background-image: url('pbg.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+
+    backdrop-filter: blur(20px);
+    margin-bottom: 40px;
+    background-color: rgba(3, 3, 3, 0.164);
+}
+.logo{
+    margin-left: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+logo{
+    flex: 1;
+    display : inline-block;
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.wrap{
+    position: absolute;
+    left: 550px;
+    
+    max-width: 400px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 20px 40px 70px 0 rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 30px;
+    
+}
+
+.btn{
+    display: inline-block;
+background: transparent;
+color: #000000;
+text-align: center;
+padding: 8px 30px;
+margin: 30px auto;
+border-radius: 30px;
+text-decoration: none;
+backdrop-filter: blur(1080px);
+text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+box-shadow: 3px 3px 3px rgba(10, 2, 10, 0.678);
+
+border-left: 1px solid rgba(255, 255, 255, 0.3);
+border-top: 1px solid rgba(255, 255, 255, 0.3);
+align-items: center;
+width: 50%;
+height: 40px;
+transition: transform 0.5s;
+
+}
+
+.btn a:hover {
+    text-decoration: underline;
+    }
+h1{
+    font-size:50px;
+    text-align: center;
+    opacity: 0.85;
+    padding-bottom: 20px;
+
+
+}
+label{
+    font-size:20px;
+    color: black;
+    margin-left: 10%;
+}
+input{
+    width:60%;
+    margin-left: 10% ;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    border: none;
+    outline:none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    
+} 
+p{
+    font-size: 15px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+a:link,a:visited{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.89);
+    
+}
