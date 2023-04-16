@@ -7,7 +7,9 @@
 }
 body{
     font-family:'Poppins', sans-serif;
-    background:linear-gradient(to right, rgb(137, 0, 119),rgb(40, 32, 158));
+    background: rgb(0,241,229);
+background: linear-gradient(45deg, rgba(0,241,229,1) 0%, rgb(39, 62, 165) 50%, rgba(241,24,231,1) 100%);
+
 }
 .navbar{
     display: flex;
@@ -28,7 +30,8 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
@@ -76,7 +79,18 @@ header{
     
     
 }
+.cont1 h2{
+    margin-top:100px;
+    
 
+}
+a{
+    transition:transform 0.5s;
+}
+a:hover{
+    color: #f8f6f6;
+    
+}
 .btn{
     display: inline-block;
     background:transparent ;
@@ -159,8 +173,8 @@ header{
  
 }
 .offer{
-    
-    background:#0f0b35;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(198,0,40,1) 100%);
     backdrop-filter: blur(20px);
     margin-top:80px;
     padding: 30px 0;
@@ -198,6 +212,11 @@ header{
     margin-bottom: 20px;
     
 }
+.footer-col2 img{
+    position: relative;
+    right : 50px;
+    
+}
 
 ul{
     list-style: none;
@@ -233,13 +252,15 @@ nav1 ul{
 nav1 ul li{
     display: inline-block;
     margin-right: 20px;
+    
  
     
 }
+
 table, th, td {
     border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 th,td{
     padding:20px
@@ -252,7 +273,7 @@ table.center {
 .con h1{
     text-align: center;
     padding:20px 0 20px 0;
-    color: #dfa0f1;
+    color: #000000;
     
 }
 table{
