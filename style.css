@@ -19,7 +19,6 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-
     backdrop-filter: blur(20px);
     margin-bottom: 40px;
     background-color: rgba(3, 3, 3, 0.164);
@@ -31,9 +30,14 @@ nav{
     flex: 1;
     text-align: right;
 }
+nav a{
+    color:black;
+
+}
 logo{
     flex: 1;
     display : inline-block;
+
     
 }
 nav ul{
