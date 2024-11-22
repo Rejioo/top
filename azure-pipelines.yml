@@ -1,17 +1,45 @@
-# HTML
-# Archive your static HTML project and save it with the build record.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# azure-pipelines.yml
 
 trigger:
-- main
+  branches:
+    include:
+      - main  # Triggers the pipeline when changes are pushed to the 'main' branch
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'  # Use an Ubuntu VM to run the pipeline (can be 'windows-latest', 'macos-latest', etc.)
+
+variables:
+  buildConfiguration: 'Release'  # Default build configuration, can be overridden
 
 steps:
-- task: ArchiveFiles@2
+- task: UseDotNet@2  # Example: Install .NET SDK (adjust this based on your project)
   inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+    packageType: 'sdk'
+    version: '6.x'  # Specify your desired .NET SDK version
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
+- task: Restore@1  # Restore dependencies (for .NET, adjust for other projects)
+  inputs:
+    restoreSolution: '**/*.sln'
+
+- task: Build@1  # Build the project
+  inputs:
+    solution: '**/*.sln'
+    msbuildArgs: '/p:Configuration=$(buildConfiguration)'
+
+- task: Publish@1  # Publish build artifacts
+  inputs:
+    publishWebProjects: false
+    buildPlatform: '$(BuildPlatform)'
+    buildConfiguration: '$(BuildConfiguration)'
+
+- task: CopyFiles@2  # Example step to copy files
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: '**/*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/published'
+
+- task: PublishBuildArtifacts@1  # Publish the build artifact
+  inputs:
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
